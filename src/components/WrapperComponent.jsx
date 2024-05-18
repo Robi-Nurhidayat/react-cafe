@@ -11,7 +11,7 @@ const WrapperComponent = () => {
         <div className='h-screen bg-[#eeeefd] grid grid-cols-12 grid-rows-12 items-start'>
             <Header />
             <LeftBar />
-            <div className='col-span-6 row-start-3 row-end-13'>
+            <div className='col-span-7 row-start-3 row-end-13'>
                 <MenuCategory />
                 {/* list of products */}
                 <Outlet />
