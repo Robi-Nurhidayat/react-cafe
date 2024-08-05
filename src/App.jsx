@@ -5,6 +5,7 @@ import {
   RouterProvider,
 } from "react-router-dom";
 import Product from './components/Product';
+import HomeAdmin from './admin/pages/HomeAdmin';
 
 const router = createBrowserRouter([
   {
@@ -14,9 +15,13 @@ const router = createBrowserRouter([
       {
         index: true,
         element: <Product />
-      }
+      },
     ]
   },
+  {
+    path: "/admin",
+    element: <HomeAdmin />
+  }
 ]);
 
 const App = () => {
