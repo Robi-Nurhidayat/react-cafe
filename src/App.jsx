@@ -6,6 +6,7 @@ import {
 } from "react-router-dom";
 import Product from './components/Product';
 import HomeAdmin from './admin/pages/HomeAdmin';
+import Login from './auth/Login';
 
 const router = createBrowserRouter([
   {
@@ -21,6 +22,10 @@ const router = createBrowserRouter([
   {
     path: "/admin",
     element: <HomeAdmin />
+  },
+  {
+    path: "/login",
+    element: <Login />
   }
 ]);
 
