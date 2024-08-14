@@ -7,6 +7,7 @@ import {
 import Product from './components/Product';
 import HomeAdmin from './admin/pages/HomeAdmin';
 import Login from './auth/Login';
+import Register from './auth/Register';
 
 const router = createBrowserRouter([
   {
@@ -26,6 +27,10 @@ const router = createBrowserRouter([
   {
     path: "/login",
     element: <Login />
+  },
+  {
+    path: "/register",
+    element: <Register />
   }
 ]);
 
